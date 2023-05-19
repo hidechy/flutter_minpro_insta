@@ -25,20 +25,28 @@ class LoginScreen extends StatelessWidget {
       body: SafeArea(
         child: SizedBox(
           width: context.screenSize.width,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                S.of(context).appTitle,
-                style: loginTextStyle,
-              ),
-              const SizedBox(height: 10),
-              ButtonWithIcon(
-                iconData: Icons.login,
-                label: S.of(context).signIn,
-                onPressed: login,
-              )
-            ],
+          child: Consumer<LoginViewModel>(
+            builder: (context, viewmodel, child) {
+              return viewmodel.isLoading
+                  ? const Center(
+                      child: CircularProgressIndicator(),
+                    )
+                  : Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          S.of(context).appTitle,
+                          style: loginTextStyle,
+                        ),
+                        const SizedBox(height: 10),
+                        ButtonWithIcon(
+                          iconData: Icons.login,
+                          label: S.of(context).signIn,
+                          onPressed: login,
+                        )
+                      ],
+                    );
+            },
           ),
         ),
       ),
