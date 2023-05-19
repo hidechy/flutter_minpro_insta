@@ -19,7 +19,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final List<Widget> _pages = [
     const FeedPage(),
     const SearchPage(),
-    const PostPage(),
+    PostPage(),
     const ActivitiesPage(),
     const ProfilePage(),
   ];

@@ -23,6 +23,13 @@
         </dict>
     </array>
 
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>ok</string>
+    <key>NSCameraUsageDescription</key>
+    <string>ok</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>ok</string>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
