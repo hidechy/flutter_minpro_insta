@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 import 'di/providers.dart';
 import 'firebase_options.dart';
 import 'generated/l10n.dart';
-import 'screens/home_screen.dart';
+import 'screens/home/home_screen.dart';
 import 'screens/login/login_screen.dart';
 import 'viewmodels/login_viewmodel.dart';
 

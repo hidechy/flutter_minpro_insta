@@ -9,7 +9,7 @@ import '../../generated/l10n.dart';
 import '../../styles/styles.dart';
 import '../../viewmodels/login_viewmodel.dart';
 import '../components/button_with_icon.dart';
-import '../home_screen.dart';
+import '../home/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
